@@ -12,7 +12,7 @@ node{
    }
    
     stage('Run Container on Server'){
-     sh 'docker run -p 8080:8080 -d --name my-app my-app'
+     sh 'docker run -p 8085:8080 -d --name my-app my-app'
     }
        
 }
