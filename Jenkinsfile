@@ -8,11 +8,11 @@ node{
      sh "${mvnCMD} clean package"
    }
    stage('Build Docker Image'){
-     sh 'docker build -t my-app .'
+     sh 'docker build -t my-dev-app .'
    }
    
     stage('Run Container on Server'){
-     sh 'docker run -p 8083:8080 -d --name my-app my-app'
+     sh 'docker run -p 8083:8080 -d --name my-dev-app my-dev-app'
     }
        
 }
